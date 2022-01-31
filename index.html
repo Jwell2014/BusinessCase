@@ -1,0 +1,886 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="BC.css" rel="stylesheet" />
+		
+		
+		
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		 <script src="https://kit.fontawesome.com/6939106af0.js" crossorigin="anonymous"></script>
+		
+		
+		<title>BusinessCase</title>
+	</head>
+
+	<body>
+		
+        <header>
+			<!-- Ici mon haut de page-->
+		
+            <section>
+                <div class="container-fluid bg-black text-dark text-center"> 
+                    <div class="row mx-auto"> 
+                        <div class="col-lg-2 col-sm-12">
+                            <div>
+								<img src="img/logo (1).png" alt="logo"/>
+							</div>
+                        </div>
+						<div class="col-lg-8 col-sm-12">
+                            <div>
+								<nav class="navbar navbar-expand-lg navbar-light pt-3">
+								  <div class="container-fluid">
+									<a class="navbar-brand" href="#"></a>
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+									  <span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarScroll">
+									  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+										<li class="nav-item">
+										  <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+										</li>
+										<li class="nav-item dropdown">
+										  <a class="nav-link dropdown-toggle navbarScrollingDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Boutique
+										  </a>
+										  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+											<li><a class="dropdown-item" href="pagechien.html">Chien</a></li>
+											<li><a class="dropdown-item" href="pagechat.html">Chat</a></li>
+											<li><a class="dropdown-item" href="pagecheval.html">Cheval</a></li>
+											<li><a class="dropdown-item" href="#">Oiseaux</a></li>
+											<li><a class="dropdown-item" href="#">Rongeur</a></li>  
+											<li><hr class="dropdown-divider"></li>
+											<li><a class="dropdown-item" href="#">Promotion</a></li>
+										  </ul>
+										</li>
+										<li class="nav-item dropdown">
+										  <a class="nav-link dropdown-toggle navbarScrollingDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Voyage dans l'espace
+										  </a>
+										  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+											<li><a class="dropdown-item" href="#">Voyage</a></li>
+											<li><a class="dropdown-item" href="#">Video</a></li>
+										  </ul>
+										</li>
+										<li class="nav-item dropdown">
+										  <a class="nav-link dropdown-toggle navbarScrollingDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Présentation
+										  </a>
+										  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+											<li><a class="dropdown-item" href="#">La Nimes'Alerie</a></li>
+											<li><a class="dropdown-item" href="#">Contact</a></li>
+										  </ul>
+										</li>
+									  </ul>
+									  <form class="d-flex">
+										<input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search">
+										<button class="btn-outline-success" type="submit">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  												<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+											</svg>
+										</button>
+									  </form>
+									</div>
+								  </div>
+								</nav>
+							</div>
+                        </div>
+                      	<div class="col-lg-1 col-sm-1 pt-4">
+                            	<a>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16" >
+  									<path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+								    </svg>
+								</a>
+						</div>
+						    <div class="col-lg-1 col-sm-1 pt-4">
+								 <a type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16" title="Se connecter">
+  									<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+									</svg>
+								 </a>
+							</div>
+                        
+                    </div>
+                </div>
+            </section>
+			
+		    </header>
+			
+	
+		<main>
+			<!-- Ici ma photo accordeons 3D-->
+		
+            <section class="text-center">
+                <div class="container-fluid"> 
+                    <div class="row" style="height: 550px">
+
+                        <div class="col-lg-12 col-sm-12">
+                             <div class="accordion1">
+
+								<!-- BOX 1 -->
+								<div class="box a1">
+									<div class="image_1">
+										<div class="text">
+											<p><a class="lien" href="pagechiencroquette.html">CROQUETTES | </a>
+											<a class="lien" href="pagechienfriandise.html">FRIANDISES | </a>
+											<a class="lien" href="pagechienaccessoire.html">ACCESSOIRES</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- BOX 2 -->
+								<div class="box a2">
+									<div class="image_2">
+										<div class="text">
+											<a><h2>Croquettes</h2></a>
+											<a><h2>Friandises</h2></a>
+											<a><h2>Accessoires</h2></a>
+										</div>
+									</div>
+								</div>
+
+								<!-- BOX 3 -->
+								<div class="box a3">
+									<div class="image_3">
+										<div class="text">
+											<a><h2>Croquettes</h2></a>
+											<a><h2>Friandises</h2></a>
+											<a><h2>Accessoires</h2></a>
+										</div>
+									</div>
+								</div>
+
+								<!-- BOX 1 -->
+								<div class="box a4">
+									<div class="image_4">
+										<div class="text">
+											<a><h2>Croquettes</h2></a>
+											<a><h2>Friandises</h2></a>
+											<a><h2>Accessoires</h2></a>
+										</div>
+									</div>
+								</div>
+
+								<!-- BOX 5 -->
+								<div class="box a5">
+									<div class="image_5">
+										<div class="text">
+											<a><h2>Croquettes</h2></a>
+											<a><h2>Friandises</h2></a>
+											<a><h2>Accessoires</h2></a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			
+			<!-- Ici A PROPOS -->
+		
+			<section class="py-5 fond">
+                <div class="container">
+                    <div class="row"> <!-- align 12 colonnes -->
+                        <div class="col-lg-12 col-sm-6">
+                            <div>
+								<h1 class="text-center mb-5">La Nîmes’Alerie se présente</h1>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<img src="img/animalerie.jpg" alt="" class="rounded-start shadow mb-5 w-100"/>
+						</div>
+						<div class="col-lg-6 col-sm-6 pt-4">
+							<p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus.<br/> 
+						    Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.
+							Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim.<br/>
+						    In hac habitasse platea dictumst.
+						    Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.</p> 
+							
+                      	</div>  
+                    </div>
+                </div>
+            </section>
+			
+			<!-- Ici Nos produits phare -->
+		
+			<section class="py-5 bg-black">
+				<div class="container">
+					
+					<!-- mon titre -->
+					<div class="row mb-5"> <!-- align 12 colonnes -->
+						<div class="col-lg-12 col-sm-6">
+							<div>
+								<h1 class="text-center text-white-50 border border-light">NOS PRODUITS PHARES</h1>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Slide -->
+					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						   <div class="row text-center text-white-50"> <!-- align 12 colonnes -->
+								<div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								 <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p>  
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								  <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								 </div>
+							</div>
+						</div>
+						<div class="carousel-item">
+						   <div class="row text-center"> <!-- align 12 colonnes -->
+								<div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								 <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								  <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								 </div>
+							</div>
+						</div>
+						<div class="carousel-item">
+						   <div class="row text-center"> <!-- align 12 colonnes -->
+								<div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p>
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								 <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p> 
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								</div>
+								  <div class="col-lg-4 col-sm-6">
+									<div>
+										<img src="img/Griffoir.png" alt="griffoir" widht="171" height="136" />
+										<p>43,27 €</p> 
+										<h6>Nulla Lorem</h6>
+										<p>Mollit cupidatat irure.<br/> Laborum magna nulla<br/>duis cillum dolor.</p>
+										<button type="button" class="btn btn-outline-light">Voir produit</button>
+									</div>
+								 </div>
+							</div>
+						</div>
+					  </div>
+						
+					<!-- controle des bouton fleches -->
+					<div class="row">
+						<div class="col-lg-12 col-sm-6">
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+						</div>
+					</div>
+					</div>
+				</div>
+            </section>
+			
+			<!-- Ici Voyage dans l'espace-->
+		
+			<section class="py-5 fond">
+                <div class="container">
+                    <div class="row"> <!-- align 12 colonnes -->
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="text-center">
+								<h2>FAIS VOYAGER TON ANIMAL DANS L’ESPACE</h2>
+							</div>
+                        </div>
+                    </div>
+					
+                </div>
+				<section id="slider">
+				  <input type="radio" name="slider" id="s1">
+				  <input type="radio" name="slider" id="s2">
+				  <input type="radio" name="slider" id="s3" checked>
+				  <input type="radio" name="slider" id="s4">
+				  <input type="radio" name="slider" id="s5">
+				  <label for="s1" id="slide1"><img src="img/espace3.png" alt=""/></label>
+				  <label for="s2" id="slide2"><img src="img/espace5.jpg" alt=""/></label>
+				  <label for="s3" id="slide3"><img src="img/chatEspace.jpg" alt=""/></label>
+				  <label for="s4" id="slide4"><img src="img/espace1.jpg" alt=""/></label>
+				  <label for="s5" id="slide5"><img src="img/espace2.jpg" alt=""/></label>
+				  
+				</section>
+
+
+
+					
+            </section>
+			
+			
+			<!-- Ici Nos produits phare -->
+		 
+		 	<section class="fond">
+                <div class="container py-5">
+                    <div class="row"> <!-- align 12 colonnes -->
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="text-center mx-auto">
+							<h3>NOS PRODUITS PHARES</h3>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            
+				<div class="container">
+		 			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <div class="row"> <!-- align 12 colonnes -->
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						    <div class="row"> <!-- align 12 colonnes -->
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						    <div class="row"> <!-- align 12 colonnes -->
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="border">
+									<div class="d-lg-flex">
+										<div class="card3 border-0 me-lg-4 mb-lg-0 mb-4">
+											<div class="backgroundEffect"></div>
+											<div class="pic"> <img class="" src="img/accessoirechat.jpeg" alt="">
+												<div class="date"> <span class="day">BEST</span> <span class="month">SALE</span> <span class="year">2022</span> </div>
+											</div>
+											<div class="content3">
+												<p class="h-1 mt-4">Accessoire pour Chat</p>
+												<p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+												<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+													<button class="btn3 btn-primary">Commander</button>
+													<div class="d-flex align-items-center justify-content-center foot">
+														<p class="admin">19,90€</p>
+														<p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+						
+						<!-- BOUTON FLÈCHES -->
+						
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				</div>
+		 	</section>
+		 
+		
+			<!-- Ici Vos avis-->
+		
+            <section class="py-5 bg-black">
+                  <div class="container">
+
+                      <div class="row"> <!-- align 12 colonnes -->
+                          <div class="col-lg-12 col-sm-6">
+                              <div class="text-center text-decoration-underline text-white-50 pb-5">
+                              <h1>Votre avis nous interresse</h1>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row"> <!-- align 12 colonnes -->
+                          <div class="col-lg-3 col-sm-6">
+                               <div class="pb-5">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" fill="currentColor" class="bi bi-chat-right-text text-white-50" viewBox="0 0 16 16">
+  										<path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+  										<path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+									</svg>
+								 <div class="text-center text-white-50">
+                                   <h3>Excellent</h3> 
+                                   <img src="img/Etoile4.png" alt="etoile" widht="143" height="20" />
+                                   <p>sur la base de 10 000 avis</p>
+								 </div>
+                               </div>
+                          </div>
+					 
+
+
+						<div class="col-lg-3 col-sm-6">
+                                    <div class="card d-flex position-relative flex-column">
+                                        <div class="imgContainer"> <img src="img/pers1.png" alt="" /> </div>
+                                        <div class="content">
+											<div class="text-center">
+												<img src="img/Etoile4.png" alt="etoile" widht="143" height="20" />
+												<h6>il y a 1heure</h6>
+											</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in leo in eros commodo volutpat ac sed dolor.</p>
+                                        </div>
+                                    </div>
+						  </div>
+
+
+						<div class="col-lg-3 col-sm-6">
+                                    <div class="card d-flex position-relative flex-column">
+                                        <div class="imgContainer"> <img src="img/pers2.png" alt=""/> </div>
+                                        <div class="content">
+                                            <div class="text-center">
+												<img src="img/Etoile4.png" alt="etoile" widht="143" height="20" />
+												<h6>il y a 1heure</h6>
+											</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in leo in eros commodo volutpat ac sed dolor.</p>
+                                        </div>
+                                    </div>
+						</div>
+
+
+						<div class="col-lg-3 col-sm-6">
+                                    <div class="card d-flex position-relative flex-column">
+                                        <div class="imgContainer"> <img src="img/pers3.png" alt="" /> </div>
+                                        <div class="content">
+                                            <div class="text-center">
+												<img src="img/Etoile4.png" alt="etoile" widht="143" height="20" />
+												<h6>il y a 1heure</h6>
+											</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in leo in eros commodo volutpat ac sed dolor.</p>
+                                        </div>
+                                    </div>
+						  </div>
+
+
+
+                                </div>
+                      </div>
+				
+              </section>
+			
+				<!-- Ici Réengagement -->
+		
+			<section class="py-5 fond">
+                <div class="container">
+					<div class="row"> <!-- align 12 colonnes -->
+						<div class="col-lg-1 col-sm-6">
+                            <div>
+								<img src="img/carton.png" alt="carton" width="84" height="84" />
+							</div>
+                        </div>
+						<div class="col-lg-2 col-sm-6">
+                            <div>
+								<p>Livraison gratuite</p>
+							</div>
+                        </div>
+                        <div class="col-lg-1 col-sm-6">
+                            <div>
+								<img src="img/camion.png" alt="carton" width="66" height="59" />
+							</div>
+                        </div>
+						<div class="col-lg-2 col-sm-6">
+                            <div>
+								<p>Livraison en 24heures</p>
+							</div>
+                        </div>
+						<div class="col-lg-1 col-sm-6">
+                            <div>
+								<img src="img/paiement.png" alt="carton" width="114" height="60" />
+							</div>
+                        </div>
+						<div class="col-lg-2 col-sm-6">
+                            <div>
+								<p>Paiement sécurisé</p>
+							</div>
+                        </div>
+						<div class="col-lg-1 col-sm-6">
+                            <div>
+								<img src="img/cb.png" alt="carton" width="84" height="84" />
+							</div>
+                        </div>
+						<div class="col-lg-2 col-sm-6">
+                            <div>
+								<p>Remboursement 30jours</p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		
+		</main>
+		
+		
+		<footer>
+			
+				<!-- Ici Nos informations -->
+		
+			<section class="py-5 bg-black">
+                <div class="container">
+					<div class="row text-center text-white-50"> <!-- align 12 colonnes -->
+						<div class="col-lg-3 col-sm-6">
+                            <div>
+								<h4>Nous Rejoindre</h4> 
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</p> 
+								<input type="email" name="email" class="" placeholder="Votre mail..." /><br/>
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-instagram"></i>
+							</div>
+                        </div>
+						<div class="col-lg-3 col-sm-6">
+                            <div>
+								<h4>Nous contacter</h4> 
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</p> 
+							</div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div>
+								<h4>Horaires d’houverture</h4> 
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</p> 
+							</div>
+                        </div>
+						<div class="col-lg-3 col-sm-6">
+                            <div>
+								<h4>Pour mieux nous connaitre</h4> 
+								<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+								</p> 
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			
+			<!-- Ici Mentions Légales -->
+		
+			<section class="bg-light text-center">
+                <div class="container">
+					<div class="row"> <!-- align 12 colonnes -->
+						<div class="col-lg-12 col-sm-6">
+                            <div>PCGU - CGV - Mentions légales- Politiques de confidentialités - contact - FAQ - Qui sommes -nous - Nos engagements </div>
+                        </div>
+						
+                    </div>
+                </div>
+            </section>
+		
+		</footer>
+		
+		
+		
+		
+	</body>
+</html>
