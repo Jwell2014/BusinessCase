@@ -3,8 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Old+Mincho&display=swap");
 
 .fond {
-  background: #3e668b;
+  background: black;
+  opacity: 0,5;
+  text-decoration-color: #ccc;
 }
+
 
 .fond2 {
   background: #dadadb;
@@ -590,6 +593,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 ul li {
@@ -597,7 +601,7 @@ ul li {
   margin: 5px 5px 0;
   font-size: 15px;
   font-style: normal;
-  color: #ccc;
+  color: white;
 }
 
 ul li:first-child {
